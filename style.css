@@ -1,0 +1,763 @@
+* {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration:none;
+	font-family: "Google Sans Regular";
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	background: #fefefe;
+}
+header {
+	width: 100%;
+	background: #11101b;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 100px;
+	position: sticky;
+	top: 0;
+}
+.logo{
+	font-size: 28px;
+	font-weight: bold;
+	color: #fefefe;
+}
+.Hamburger {
+	display: none;
+}
+.nav-bar ul{
+	display: flex;
+}
+.nav-bar ul li a{
+	display: block;
+	color: #fefefe;
+	font-size: 20px;
+	padding: 10px 25px;
+	border-radius: 50px;
+	transition: 0.2s;
+	margin: 0 5px;
+}
+.nav-bar ul li a:hover {
+	color: #11101b;
+	background: #fefefe;
+}
+.nav-bar ul li a.active {
+	color: #11101b;
+	background: #fefefe;
+}
+
+@media only screen and (max-width: 1320px) {
+	header {
+		padding: 0 50px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	header {
+		padding: 0 40px;
+	}
+}
+@media only screen and (max-width: 990px) {
+	header {
+		padding: 0 30px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	header {
+		padding: 0 20px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	header {
+		padding: 0 10px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	header {
+		padding: 0 9px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	header {
+		padding: 0 8px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	header {
+		padding: 0 7px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	header {
+		padding: 0 6px;
+	}
+}
+
+@media only screen and (max-width: 1320px) {
+	.Hamburger {
+	      display: block;
+		  cursor: pointer;
+	}
+	.Hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+		
+	}
+    .nav-bar {
+		height: 0px;
+	    position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+   }
+   .nav-bar.active {
+	    height: 450px;
+   }
+   .nav-bar ul {
+	   display: block;
+	   width: fit-content;
+       margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul{
+	   opacity: 1;
+   }
+   .nav-bar ul li a {
+	   margin-bottom: 12px;
+	   color: white;
+   }
+}
+@media only screen and (max-width: 1100px) {
+	.Hamburger {
+	      display: block;
+		  cursor: pointer;
+	}
+	.Hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+		
+	}
+    .nav-bar {
+		height: 0px;
+	    position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+   }
+   .nav-bar.active {
+	    height: 450px;
+   }
+   .nav-bar ul {
+	   display: block;
+	   width: fit-content;
+       margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul{
+	   opacity: 1;
+   }
+   .nav-bar ul li a {
+	   margin-bottom: 12px;
+	   color: white;
+   }
+}
+@media only screen and (max-width: 990px) {
+	.Hamburger {
+	      display: block;
+		  cursor: pointer;
+	}
+	.Hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+		
+	}
+    .nav-bar {
+		height: 0px;
+	    position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+   }
+   .nav-bar.active {
+	    height: 450px;
+   }
+   .nav-bar ul {
+	   display: block;
+	   width: fit-content;
+       margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul{
+	   opacity: 1;
+   }
+   .nav-bar ul li a {
+	   margin-bottom: 12px;
+	   color: white;
+   }
+}
+@media only screen and (max-width: 800px) {
+	.Hamburger {
+	      display: block;
+		  cursor: pointer;
+	}
+	.Hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+		
+	}
+    .nav-bar {
+		height: 0px;
+	    position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+   }
+   .nav-bar.active {
+	    height: 450px;
+   }
+   .nav-bar ul {
+	   display: block;
+	   width: fit-content;
+       margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul{
+	   opacity: 1;
+   }
+   .nav-bar ul li a {
+	   margin-bottom: 12px;
+	   color: white;
+   }
+}
+@media only screen and (max-width: 700px) {
+	.Hamburger {
+	      display: block;
+		  cursor: pointer;
+	}
+	.Hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+		
+	}
+    .nav-bar {
+		height: 0px;
+	    position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+   }
+   .nav-bar.active {
+	    height: 450px;
+   }
+   .nav-bar ul {
+	   display: block;
+	   width: fit-content;
+       margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul{
+	   opacity: 1;
+   }
+   .nav-bar ul li a {
+	   margin-bottom: 12px;
+	   color: white;
+   }
+}
+@media only screen and (max-width: 600px) {
+	.Hamburger {
+	      display: block;
+		  cursor: pointer;
+	}
+	.Hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+		
+	}
+    .nav-bar {
+		height: 0px;
+	    position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+   }
+   .nav-bar.active {
+	    height: 450px;
+   }
+   .nav-bar ul {
+	   display: block;
+	   width: fit-content;
+       margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul{
+	   opacity: 1;
+   }
+   .nav-bar ul li a {
+	   margin-bottom: 12px;
+	   color: white;
+   }
+}
+@media only screen and (max-width: 500px) {
+	.Hamburger {
+	      display: block;
+		  cursor: pointer;
+	}
+	.Hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+		
+	}
+    .nav-bar {
+		height: 0px;
+	    position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+   }
+   .nav-bar.active {
+	    height: 450px;
+   }
+   .nav-bar ul {
+	   display: block;
+	   width: fit-content;
+       margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul{
+	   opacity: 1;
+   }
+   .nav-bar ul li a {
+	   margin-bottom: 12px;
+	   color: white;
+   }
+}
+@media only screen and (max-width: 400px) {
+	.Hamburger {
+	      display: block;
+		  cursor: pointer;
+	}
+	.Hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+		
+	}
+    .nav-bar {
+		height: 0px;
+	    position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+   }
+   .nav-bar.active {
+	    height: 450px;
+   }
+   .nav-bar ul {
+	   display: block;
+	   width: fit-content;
+       margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul{
+	   opacity: 1;
+   }
+   .nav-bar ul li a {
+	   margin-bottom: 12px;
+	   color: white;
+   }
+}
+@media only screen and (max-width: 300px) {
+	.Hamburger {
+	      display: block;
+		  cursor: pointer;
+	}
+	.Hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+		
+	}
+    .nav-bar {
+		height: 0px;
+	    position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #11101b;
+		transition: 0.5s;
+		overflow: hidden;
+   }
+   .nav-bar.active {
+	    height: 450px;
+   }
+   .nav-bar ul {
+	   display: block;
+	   width: fit-content;
+       margin: 80px auto 0 auto;
+	   text-align: center;
+	   transition: 0.5s;
+	   opacity: 0;
+   }
+   .nav-bar.active ul{
+	   opacity: 1;
+   }
+   .nav-bar ul li a {
+	   margin-bottom: 12px;
+	   color: white;
+   }
+}
+.row {
+	background: #fefefe;
+	padding: 150px 250px 150px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.row .content-1 {
+	max-width: 300%;
+	
+}
+
+.row .content-1 h2 {
+	font-size: 3em;
+	color: black;
+}
+.row .content-1 p {
+	font-size: 1em;
+	color: black;
+}
+.row .content-1 a {
+	display: inline-block;
+	background: #000000;
+	color: #fefefe;
+	padding: 8px 20px;
+	text-decoration: none;
+	font-weight: 600px;
+	margin-top: 5px;
+	border-radius: 20px;
+}
+.row .img{
+	max-width: 400px;
+	margin-left: 30px;
+	border-radius: 30px;
+	height: 300px;
+	width: 250px;
+	
+}
+@media (max-width: 1320px) {
+	.row
+	{
+	padding: 20px 20px 20px;
+	}
+	.row.img
+	{
+		margin-left: 0;
+		max-width: 80%;
+	}
+	.row .content-1 h2
+	{
+		font-size: 2em;
+	}
+}
+@media (max-width: 1100px) {
+	.row
+	{
+	padding: 20pxpx 20px 20px;
+	
+	}
+	.row.img
+	{
+		margin-left: 0;
+		max-width: 80%;
+	}
+	.row .content-1 h2
+	{
+		font-size: 2em;
+	}
+}
+@media (max-width: 990px) {
+	.row
+	{
+	padding: 20px 20px 20px;
+	}
+	.row.img
+	{
+		margin-left: 0;
+		max-width: 80%;
+	}
+	.row .content-1 h2
+	{
+		font-size: 2em;
+	}
+}
+@media (max-width: 800px) {
+	.row
+	{
+	padding: 20px 20px 20px;
+	}
+	.row.img
+	{
+		margin-left: 0;
+		max-width: 80%;
+	}
+	.row .content-1 h2
+	{
+		font-size: 2em;
+	}
+}
+@media (max-width: 700px) {
+	.row
+	{
+	padding: 20px 20px 20px;
+	}
+	.row.img
+	{
+		margin-left: 0;
+		max-width: 80%;
+	}
+	.row .content-1 h2
+	{
+		font-size: 2em;
+	}
+}
+@media (max-width: 600px) {
+	.row
+	{
+	padding: 20px 20px 20px;
+	}
+	.row.img
+	{
+		margin-left: 0;
+		max-width: 80%;
+	}
+	.row .content-1 h2
+	{
+		font-size: 2em;
+	}
+}
+@media (max-width: 500px) {
+	.row
+	{
+	padding: 20px 20px 20px;
+	}
+	.row.img
+	{
+		margin-left: 0;
+		max-width: 80%;
+	}
+	.row .content-1 h2
+	{
+		font-size: 2em;
+	}
+}
+@media (max-width: 400px) {
+	.row
+	{
+	padding: 20px 20px 20px;
+	}
+	.row.img
+	{
+		margin-left: 0;
+		max-width: 80%;
+	}
+	.row .content-1 h2
+	{
+		font-size: 2em;
+	}
+}
+
+.about-diff-2{
+	padding: 100px 400px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Pic{
+ width: 300px;
+ height: 300px;
+ margin: 10px;
+ padding: 10px;
+}
+#AboutMe{
+	text-align: center;
+	margin: 10px;
+
+}
+.bot p{
+   margin:10px;
+   padding:10px;
+}
+
+@media only screen and (max-width: 1320px) {
+	.about-diff-2 {
+		padding: 0 50px;
+	}
+}
+@media only screen and (max-width: 990px) {
+	.about-diff-2 {
+		padding: 0 40px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.about-diff-2 {
+		padding: 0 30px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.about-diff-2 {
+		padding: 0 10px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.about-diff-2 {
+		padding: 0 9px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.about-diff-2 {
+		padding: 0 8px;
+	}
+}
+.jiji h1{
+	text-align: center;
+	margin:10px;
+	padding: 10px;
+}
+#Skills{
+   min-height: 100vh;
+   width: 100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   color:#000000;
+   flex-wrap: wrap;
+}
+
+
+.content{
+	width: 300px;
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+}
+
+.content img{
+	width: 50px;
+	height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+	background: #000000;
+
+}
+.content h2{
+	font-size: 18px;
+	margin:10px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.content p{
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+#footer-col{
+	width: 100%;
+    margin-top: auto;
+    background-color: #000000;
+    padding: 60px 10%;
+}
+h4{
+	
+font-size:100px;
+color:#fefefe;
+animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {color:rgb(255, 0, 0); left:0px; top:0px;}
+  25%  {color:yellow; left:200px; top:0px;}
+  50%  {color:rgb(255, 255, 255); left:200px; top:200px;}
+  75%  {color:green; left:0px; top:200px;}
+  100% {color:red; left:0px; top:0px;}
+}
